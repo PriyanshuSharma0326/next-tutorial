@@ -1,6 +1,11 @@
+export const metadata = {
+    title: 'Register Page',
+    description: 'Authentication:Register tutorial',
+}
+
 function RegisterPage() {
     return (
-        <div>RegisterPage</div>
+        <h1>Register Page</h1>
     )
 }
 

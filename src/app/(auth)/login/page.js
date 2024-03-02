@@ -1,6 +1,11 @@
+export const metadata = {
+    title: 'Login Page',
+    description: 'Authentication:Login tutorial',
+}
+
 function LoginPage() {
     return (
-        <div>LoginPage</div>
+        <h1>Login Page</h1>
     )
 }
 
