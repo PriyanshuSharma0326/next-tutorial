@@ -1,5 +1,8 @@
 export const metadata = {
-    title: 'Next.js',
+    title: {
+        default: 'Next.js Page',
+        template: '%s | Powered by Next.js',
+    },
     description: 'Next.js tutorial',
 }
 
@@ -17,17 +20,11 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body>
-                <header style={{
-                    backgroundColor: 'lightblue',
-                    padding: '1rem'
-                }}>
+                <header style={headerStyles}>
                     <p>Header</p>
                 </header>
                 {children}
-                <footer style={{
-                    backgroundColor: 'ghostwhite',
-                    padding: '1rem'
-                }}>
+                <footer style={footerStyles}>
                     <p>Footer</p>
                 </footer>
             </body>
