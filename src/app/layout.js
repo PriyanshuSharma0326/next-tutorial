@@ -1,3 +1,5 @@
+import './globals.css';
+
 export const metadata = {
     title: {
         default: 'Next.js Page',
@@ -6,25 +8,15 @@ export const metadata = {
     description: 'Next.js tutorial',
 }
 
-export const headerStyles = {
-    backgroundColor: 'lightblue',
-    padding: '1rem',
-};
-  
-export const footerStyles = {
-    backgroundColor: 'ghostwhite',
-    padding: '1rem',
-};
-
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body>
-                <header style={headerStyles}>
+            <body className='w-screen h-[100vh] bg-white-300'>
+                <header className='bg-blue-300 p-4 font-bold text-[2rem] text-black'>
                     <p>Header</p>
                 </header>
                 {children}
-                <footer style={footerStyles}>
+                <footer className='bg-gray-800 font-bold text-[2rem] text-white p-4'>
                     <p>Footer</p>
                 </footer>
             </body>

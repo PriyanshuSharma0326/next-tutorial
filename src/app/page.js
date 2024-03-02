@@ -1,22 +1,51 @@
 import Link from "next/link";
 
+const navLinks = [
+    {
+        name: 'Blog',
+        href: '/blog'
+    },
+    {
+        name: 'Products',
+        href: '/products'
+    },
+    {
+        name: 'Login',
+        href: '/login'
+    },
+    {
+        name: 'About',
+        href: '/about'
+    },
+    {
+        name: 'Documents',
+        href: '/docs'
+    },
+    {
+        name: 'Order Product',
+        href: '/order-product'
+    },
+    {
+        name: 'Profile',
+        href: '/profile'
+    },
+];
+
 function Home() {
     return (
-        <>
-            <h1>Welcome Home!</h1>
+        <div className="p-8">
+            <h1 className="text-[1.75rem]">Welcome Home!</h1>
 
-            <ul>
-                <li>
-                    <Link href='/blog'>Blog</Link>
-                </li>
-                <li>
-                    <Link href='/products'>Products</Link>
-                </li>
-                <li>
-                    <Link href='/login'>Login</Link>
-                </li>
+            <ul className="py-4">
+                {navLinks.map(link => {
+                    return (
+                        <li key={link.name} className="font-bold text-blue-500 hover:text-blue-800 hover:underline text-[1.25rem]">
+                            <Link href={link.href}>{link.name}</Link>
+                        </li>
+                    )
+                })}
             </ul>
-        </>
+        </div>
     );
 }
 
