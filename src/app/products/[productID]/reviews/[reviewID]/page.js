@@ -12,11 +12,11 @@ function ReviewDetail({ params }) {
         notFound();
     }
 
-    const random = getRandomInt(2);
+    // const random = getRandomInt(2);
 
-    if(random == 1) {
-        throw new Error('Error loading review!');
-    }
+    // if(random == 1) {
+    //     throw new Error('Error loading review!');
+    // }
 
     return (
         <div className="p-8">
