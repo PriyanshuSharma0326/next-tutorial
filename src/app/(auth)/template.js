@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import './styles.css';
+import { useState } from "react";
 
 const navLinks = [
     {
@@ -21,9 +21,16 @@ const navLinks = [
 
 export default function AuthLayout({ children }) {
     const pathname = usePathname();
+    const [input, setInput] = useState('');
+
+    const changeHandler = (e) => {
+        setInput(e.target.value);
+    }
 
     return (
         <div className="p-8 flex flex-col gap-12">
+            <input className="border-[2px] border-gray-900 w-1/3 px-4 py-2" value={input} onChange={changeHandler} />
+            
             <ul>
                 {navLinks.map(link => {
                     const isActive = pathname.startsWith(link.href);
