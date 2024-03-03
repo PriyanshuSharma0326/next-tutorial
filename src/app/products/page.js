@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function ProductsList() {
     return (
-        <>
+        <div className="p-8">
             <h1>List of products!</h1>
             <ul>
                 <li>
@@ -17,7 +17,7 @@ function ProductsList() {
                 </li>
             </ul>
             <Link href='/'>Home</Link>
-        </>
+        </div>
     );
 }
 
