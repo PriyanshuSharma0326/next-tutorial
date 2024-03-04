@@ -1,9 +1,13 @@
 import Card from "@/components/card";
+import Link from "next/link";
 
-function Notifications() {
+function DefaultNotifications() {
     return (
-        <Card>Notifications</Card>
+        <Card>
+            <Link className="font-semibold text-blue-500 hover:text-blue-700 hover:underline" href='/dashboard/archived'>Archived</Link>
+            <p>Default Notifications</p>
+        </Card>
     )
 }
 
-export default Notifications;
+export default DefaultNotifications;
