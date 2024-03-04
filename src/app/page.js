@@ -29,6 +29,10 @@ const navLinks = [
         name: 'Profile',
         href: '/profile'
     },
+    {
+        name: 'Dashboard',
+        href: '/dashboard',
+    }
 ];
 
 function Home() {
