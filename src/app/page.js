@@ -32,6 +32,10 @@ const navLinks = [
     {
         name: 'Dashboard',
         href: '/dashboard',
+    },
+    {
+        name: 'Photo Feed',
+        href: '/photo-feed'
     }
 ];
 
