@@ -4,6 +4,7 @@ function ProductsList() {
     return (
         <div className="p-8">
             <h1>List of products!</h1>
+
             <ul>
                 <li>
                     <Link href='products/1'>Product 1</Link>
@@ -16,6 +17,7 @@ function ProductsList() {
                     <Link href='products/3' replace>Product 3</Link>
                 </li>
             </ul>
+
             <Link href='/'>Home</Link>
         </div>
     );

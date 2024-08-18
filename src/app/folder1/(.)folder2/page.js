@@ -1,6 +1,6 @@
 function InterceptedFolderTwo() {
     return (
-        <div>InterceptedFolderTwo</div>
+        <div>Intercepted Folder Two</div>
     )
 }
 
